@@ -9,7 +9,7 @@ const { userRouter } = require("./routes/userRouter");
 app.use("/", userRouter);
 app.use("/orders", orderRouter);
 
-app.listen(80, async () => {
+app.listen(3000, async () => {
   try {
     await sequelize.sync();
     console.log("Connected to DB");
